@@ -9,3 +9,12 @@
     border: 2px solid peru;
     border-radius: 10px;
 }
+
+.review h6 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.review p {
+    font-size: 20px;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useReviews from '../Hooks/useReviews';
 
 const Home = () => {
-    const [reviews, setReviews] = useReviews()
-    console.log(reviews)
+    const [reviews] = useReviews()
     return (
         <div>
             <div className='flex'>
@@ -18,10 +18,21 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <h1 className='text-5xl text-gray-500'>review 000</h1>
-                <div className='review-items'>
-                    <h1>{reviews.length}</h1>
+                <h1 className='text-5xl text-gray-500'>Owner's Review</h1>
+                <div className="review-container">
+                    {
+                        reviews.slice(0, 3).map(review => (
+                            <div className='review'>
+                                <h6>Owner : {review.name}</h6>
+                                <p>{review.review}</p>
+                                <p className='text-orange-600 font-semibold'>Rating : {review.ratings}</p>
+                            </div>
+                        ))
+                    }
                 </div>
+                <Link to='/review'>
+                    <button className=' text-xl border-2 bg-green-200 rounded-xl border-orange-400 px-8 py-4 mb-7 hover:bg-green-300'>See all reviews</button>
+                </Link>
             </div>
         </div>
     )

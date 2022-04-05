@@ -12,7 +12,7 @@ const Review = () => {
                     <div className='review'>
                         <h6>{review.name}</h6>
                         <p>{review.review}</p>
-                        <p>{review.ratings}</p>
+                        <p className='text-orange-600 font-semibold'>Rating : {review.ratings}</p>
                     </div>
                 ))
             }
