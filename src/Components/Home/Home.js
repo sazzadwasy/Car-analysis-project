@@ -1,6 +1,9 @@
 import React from 'react';
+import useReviews from '../Hooks/useReviews';
 
 const Home = () => {
+    const [reviews, setReviews] = useReviews()
+    console.log(reviews)
     return (
         <div>
             <div className='flex'>
@@ -17,7 +20,7 @@ const Home = () => {
             <div>
                 <h1 className='text-5xl text-gray-500'>review 000</h1>
                 <div className='review-items'>
-
+                    <h1>{reviews.length}</h1>
                 </div>
             </div>
         </div>

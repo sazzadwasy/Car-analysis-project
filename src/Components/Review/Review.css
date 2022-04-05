@@ -1,0 +1,11 @@
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.review {
+    border: 2px solid peru;
+    border-radius: 10px;
+}
