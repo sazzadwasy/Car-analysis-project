@@ -49,7 +49,7 @@ const Dashboard = () => {
                     <Line dataKey={'revenue'}></Line>
                     <CartesianGrid stroke="#ccc" />
                     <XAxis dataKey={'sell'}></XAxis>
-                    <YAxis ></YAxis>
+                    <YAxis></YAxis>
                     <Tooltip></Tooltip>
                 </LineChart>
             </div>
