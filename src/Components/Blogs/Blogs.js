@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='blog-content'>
+        <div className='p-6'>
             <p className='text-3xl font-semibold text-indigo-600'>What is Context api ?</p>
             <p className='text-3xl font-semibold'>Ans :The context api provides a way to pass data from component to component without having to pass data manually.Is (context api)a way for a React app to effectively produce global variables that can be passed around.This is the alternative to prop drilling or moving props from grandparent to child to parent, and so on.Context api made a good solution to pass data from parents to all child and shibling component. If need to share state between lot's of components context api is good solution but if need to pass data in one component or its relevent to its children, then passing it in props is more indicative and nicer.</p>
             <br />
