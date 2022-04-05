@@ -1,6 +1,6 @@
-# My react-router project
+# React-router-project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ [Live site](https://spiffy-lolly-46b881.netlify.app/).
 
 ## Available Scripts
 
